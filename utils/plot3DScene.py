@@ -32,7 +32,8 @@ def plot3DScene(map_3d,imageRGB):
     fig = plt.figure()
 
     # Prepare figure for 3D data
-    ax = fig.gca(projection='3d')
+    #ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection = '3d')
 
     # Name axes
     ax.set_xlabel('X axis')
